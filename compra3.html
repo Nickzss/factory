@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Compra de Banderillas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Verdana, sans-serif;
+      background-color: #fff9f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #8b5c33;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: "Lora", serif;
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-family: "Lora", serif;
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-family: "Lora", serif;
+      font-size: 1.2em;
+    }
+
+    section {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: left;
+      font-size: 1.2em;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      font-family: "Lora", serif;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    .radio-group {
+      margin-bottom: 20px;
+    }
+
+    .radio-group label {
+      display: inline-block;
+      margin-right: 20px;
+      font-weight: normal;
+    }
+
+    button {
+      font-family: "Lora", serif;
+      background-color: #d2691e;
+      color: white;
+      border: none;
+      padding: 20px 40px;
+      font-size: 2em;
+      cursor: pointer;
+      border-radius: 12px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      display: block;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #a0522d;
+      transform: scale(1.03);
+    }
+
+    footer {
+      background-color: #8b5c33;
+      margin-top: 3em;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      button {
+        font-size: 1.3em;
+        padding: 18px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      form {
+        padding: 20px;
+      }
+    }
+
+    .boton-regresar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #8b5c33;
+    color: white;
+    padding: 12px 18px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: "Lora", serif;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 1000;
+}
+
+.boton-regresar:hover {
+    background-color: #a0522d;
+    transform: scale(1.05);
+}
+  </style>
+</head>
+<body>
+      <a href="index.html" class="boton-regresar">← Inicio</a>
+  <header>
+    <h1>Compra tus Banderillas</h1>
+    <p>Elige tu cantidad, tipo de empanizado y para quién es el pedido</p>
+  </header>
+
+  <section>
+    <form action="https://formspree.io/f/movlppqo" method="POST">
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="cantidad">Cantidad de Banderillas:</label>
+      <input type="number" id="cantidad" name="cantidad de Banderillas" min="1" required>
+
+      <div class="radio-group">
+        <label>Empanizado:</label><br>
+        <label><input type="radio" name="empanizado" value="chips" required> Chips</label>
+        <label><input type="radio" name="empanizado" value="papa"> Papa</label>
+      </div>
+
+      <div class="radio-group">
+        <label>Tipo de cliente:</label><br>
+        <label><input type="radio" name="tipo_cliente" value="adulto" required> Adulto</label>
+        <label><input type="radio" name="tipo_cliente" value="niño"> Niño</label>
+      </div>
+
+
+
+      <button type="submit">Enviar pedido</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Day & Night. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

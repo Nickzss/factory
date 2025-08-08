@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lora", serif;
+  background-color: #fff9f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #8b5c33;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.producto {
+  background-color: white;
+  border: 2px solid #d2691e;
+  border-radius: 15px;
+  width: 320px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.producto:hover {
+  transform: scale(1.05);
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.producto h2 {
+  font-size: 2em;
+  color: #8b5c33;
+  margin-bottom: 10px;
+}
+
+.producto p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.producto button {
+  background-color: #d2691e;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.1em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.producto button:hover {
+  background-color: #a0522d;
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #8b5c33;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+
+@media (max-width: 768px) {
+  .menu-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .producto {
+    width: 90%;
+  }
+}
+
+.boton-regresar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #8b5c33;
+    color: white;
+    padding: 12px 18px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: "Lora", serif;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 1000;
+}
+
+.boton-regresar:hover {
+    background-color: #a0522d;
+    transform: scale(1.05);
+}

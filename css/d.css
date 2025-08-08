@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    background-color: #fff9f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #8b5c33;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: "Lora", serif;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: "Lora", serif;
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: "Lora", serif;
+    font-size: 1.2em;
+}
+
+section {
+    padding: 30px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.acciones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.acciones button {
+    font-family: "Lora", serif;
+    background-color: #d2691e;
+    color: white;
+    border: none;
+    padding: 30px 40px;
+    font-size: 3em;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.acciones button:hover {
+    background-color: #a0522d;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #8b5c33;
+    margin-top: 3em;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+#elaboracion-detallada {
+    background-color: #fff4ec;
+    padding: 30px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: left;
+    border-top: 3px solid #d2691e;
+}
+
+#elaboracion-detallada h2 {
+    font-family: "Lora", serif;
+    font-size: 2.8em;
+    text-align: center;
+    color: #8b5c33;
+    margin-bottom: 30px;
+}
+
+.proceso {
+    margin-bottom: 50px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.proceso h3 {
+    font-family: "Lora", serif;
+    font-size: 2.2em;
+    color: #a0522d;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.proceso ol {
+    list-style: decimal inside;
+    font-size: 1.2em;
+    color: #333;
+    padding-left: 0;
+    font-family: "Lora", serif;
+}
+
+.proceso li {
+    margin-bottom: 30px;
+}
+
+.proceso li p {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-family: "Lora", serif;
+}
+
+.proceso img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .acciones button {
+        width: 80%;
+        padding: 18px;
+        font-size: 1.1em;
+    }
+
+    .proceso ol {
+        font-size: 1.1em;
+    }
+
+    .proceso h3 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .acciones {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .acciones button {
+        width: 90%;
+    }
+
+    #elaboracion-detallada h2 {
+        font-size: 2em;
+    }
+
+    .proceso h3 {
+        font-size: 1.6em;
+    }
+
+    .proceso li p {
+        font-size: 1em;
+    }
+}
+
+.boton-regresar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #8b5c33;
+    color: white;
+    padding: 12px 18px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: "Lora", serif;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 1000;
+}
+
+.boton-regresar:hover {
+    background-color: #a0522d;
+    transform: scale(1.05);
+}
